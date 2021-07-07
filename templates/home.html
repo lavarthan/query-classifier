@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word classier</title>
+</head>
+<body>
+<div class="login">
+    <h1><b>Word classier</b></h1>
+        <form action="/process" method="post" >
+            <input name = "query" type="text" placeholder="Enter keyword or query" />
+        <button title="Classify">Let classify</button>
+        </form>
+    </div>
+
+
+
+</body>
+<style>
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+     font-size: 32px;
+}
+body{
+    height: 100vh;
+    background:linear-gradient(to right,#1F3158,#670d10);
+}
+.login{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: #ff9800;
+    font-family: Cooper Black;
+    text-align: center;
+    padding: 80px 0;
+    border-bottom: 2px solid #f00;
+    margin-bottom: 30px;
+    height: 100px;
+    font-size: 32px;
+}
+input{
+    width: 100%;
+    height: 70px;
+    margin: 5px 0;
+    outline: none;
+    padding: 7px;
+    background: #1f3158;
+    border: 1px solid #184c9a;
+    font-size: 17px;
+    color: #fff;
+    transition: 1s;
+}
+input:focus{
+    box-shadow:  2px 2px 6px 0 #234ba2;
+}
+
+button{
+    width: 100%;
+    height: 70px;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 18px;
+    background:linear-gradient(to right, #2b6fa5,#0de4ff);
+    color: #fff;
+    border: 1px solid #184c9a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background:linear-gradient(to left, #2b6fa5,#0de4ff);
+
+}
+
+/*youtube link*/
+a{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color:#f00;
+  background-color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration:none;
+  font-family:cursive;
+}
+
+
+</style>
+</html>
